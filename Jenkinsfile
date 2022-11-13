@@ -9,6 +9,7 @@ pipeline {
     stage('Install') {
       steps {
         sh "yarn"
+        sh "yarn playwright install"
       }
     }
     stage('Test') {
