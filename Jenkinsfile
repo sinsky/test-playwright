@@ -16,11 +16,6 @@ pipeline {
         sh "yarn test"
       }
     }
-    stage('Deploy') {
-      steps {
-        echo 'Deploying....'
-      }
-    }
   }
 
   post {
